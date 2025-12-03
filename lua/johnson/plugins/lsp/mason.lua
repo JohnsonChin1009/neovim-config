@@ -29,6 +29,8 @@ return {
         "lua_ls",
         "emmet_ls",
         "pyright",
+        "pylsp",
+        "rust_analyzer",
       },
 
       handlers = {
@@ -60,7 +62,7 @@ return {
       ensure_installed = {
         "prettier",
         "stylua",
-        "eslint_d",
+        -- "eslint_d",
       },
     })
   end,

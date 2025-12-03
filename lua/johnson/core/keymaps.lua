@@ -4,7 +4,7 @@ local keymap = vim.keymap
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
--- increment/decrement numbers 
+-- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number by 1" })
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number by 1" })
 
@@ -21,4 +21,6 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
-
+-- codesnap
+keymap.set("n", "<leader>cc", "<cmd>CodeSnap<cr>", { desc = "Saveselected code into clipboard" })
+keymap.set("n", "<leader>cS", "<cmd>CodeSnapSave<cr>", { desc = " Save selected code in ~/Downloads" })
